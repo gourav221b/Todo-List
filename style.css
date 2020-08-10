@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient( 60deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    background-repeat: repeat;
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header,
+form {
+    min-height: 20vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: #ffffff;
+}
+
+form,
+form input {
+    width: 90%;
+}
+
+
+/* form input {
+    width: 50%;
+} */
+
+::placeholder {
+    font-size: 20px;
+}
+
+
+/* form button {
+    width: auto;
+} */
+
+form button {
+    color: #302b63;
+    background: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    color: #ffffff;
+    background: #302b63;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em;
+    background: #ffffff;
+    color: #000000;
+    font-size: 1.5rem;
+    width: auto;
+    word-wrap: break-word;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.todo-item {
+    margin-top: 0;
+    padding: 0 0.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    transform: margin-top 1.3s ease;
+}
+
+.trash-btn,
+.completed-btn {
+    background: #af1637;
+    color: #ffffff;
+    padding: 1em;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.fa-check,
+.fa-trash {
+    pointer-events: none;
+}
+
+.trash-btn:hover,
+.completed-btn:hover {
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.completed-btn {
+    background: rgba(7, 192, 121, 0.918);
+}
+
+.checked {
+    text-decoration: line-through;
+    opacity: 0.6;
+    transition: all 0.4s ease;
+}
+
+.deleteAnim {
+    transform: translateY(10em) rotateZ(20deg);
+    opacity: 0;
+    transition: 2s ease;
+}
+
+.clearlist {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 1rem;
+    background-color: #24243e;
+    color: #ffffff;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    font-family: Roboto;
+    margin-top: 10px;
+}
+
+.clearlist:hover {
+    background-color: rgba(233, 32, 32, 0.836);
+    transition: 0.3s ease;
+}
+
+select {
+    outline: none;
+    border: none;
+    color: #24243e;
+    width: 10rem;
+    height: auto;
+    cursor: pointer;
+    padding: 1rem;
+    font-family: sans-serif;
+}
+
+.select {
+    margin: 0 1rem;
+    position: relative;
+    overflow: hidden;
+}
